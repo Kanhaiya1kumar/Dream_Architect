@@ -1,0 +1,5 @@
+html,body,#__next{height:100%} body{margin:0;background:#0b0f1a;color:#e5e7eb;font-family:system-ui,Segoe UI,Roboto,Inter}
+*{box-sizing:border-box}
+button{cursor:pointer}
+.sidebar{padding:16px;border-right:1px solid #1f2937;background:#0f172a}
+.slider{width:100%}
