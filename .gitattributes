@@ -1,0 +1,31 @@
+# Enforce LF line endings for consistency
+* text=auto eol=lf
+
+# Binary file detection
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.mov binary
+*.zip binary
+*.7z binary
+*.tar binary
+*.tar.gz binary
+*.exe binary
+*.dll binary
+*.node binary
+*.bin binary
+
+# Git LFS for large binary assets
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.node filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+
+# Prevent committing large builds or compiled files
+/frontend/node_modules/** linguist-vendored
+/frontend/.next/** linguist-vendored
+/backend/__pycache__/** linguist-vendored
